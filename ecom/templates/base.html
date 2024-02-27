@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock title %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "/css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "/css/themify-icons/themify-icons.css" %}">
+</head>
+<body>
+    <div id="main">
+        {% include "tags/header.html" %}
+        {% block slider %}
+            {% include "tags/slider.html" %}
+        {% endblock slider %}
+        {% block content %}{% endblock content %}
+        {% include "tags/footer.html" %}
+    </div>
+   
+</body>
+</html>

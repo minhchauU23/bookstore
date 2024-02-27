@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="content">
+        {% for category in categories %}
+        <div class="content-section">
+            <h2 class="section-heading">{{category.name}}</h2>
+            
+            <div class="book-container">
+                
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                
+            </div>
+            <button class="more">More</button>
+        </div>
+        {% endfor %}
+       
+        {% comment %} <div class="content-section">
+            <h2 class="section-heading">Best Seller</h2>
+            <div class="book-container">
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                
+            </div>
+            <button class="more">More</button>
+        </div>
+        <div class="content-section">
+            <h2 class="section-heading">Best Seller</h2>
+            <div class="book-container">
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                <div class="book-item">
+                    <img src="https://pos.nvncdn.com/fd5775-40602/ps/20201222_RWUrrPCFX3mE8flLJA8iFxDF.png" alt="">
+                    <div class ="book-name">Book name</div>
+                    <div class="new-price">1000000</div>
+                    <div class = "sale-price">90000</div>
+                </div>
+                
+            </div>
+            <button class="more">More</button>
+        </div> {% endcomment %}
+    </div>
+{% endblock content %}
+
